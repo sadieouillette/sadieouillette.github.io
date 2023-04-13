@@ -1,5 +1,5 @@
 body {
-	background-color: #FAF0F8;
+	background-color: #D5E2CA;
 	margin: 0;
   	padding: 0;
 }
@@ -46,10 +46,9 @@ body {
 
 .content h1 {
   font-family: "Playfair Display", serif;
-    color: #4F404F;
+    color: 2D252D;
       font-style: italic;
      text-align: center;
-    text-shadow: 40px;
 }
 
 .content h2 {
@@ -96,33 +95,51 @@ body {
 
 
 /* LAYOUT STUFF */
+
+/* Page content. The content margin-left must match the sidebar width */
 div.content {
-  margin-left: 100px;
+  margin-left: 100px;/* <--- CHANGE US TOGETHER*/
    margin-right: 100px;
-    padding-top: 115px;
+    padding-top: 75px;
   padding-left: 25px;
   padding-right: 16px;
   height: 1000px;
-    background-color: #D5E2CA;
-    min-width: 500px;
-    overflow: auto
+    background-color: #b9db9c
 }
 
+ /* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+padding-top: 115;
+  width: 350px;          /* <--- CHANGE US TOGETHER */
+  background-color: #705C70;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  font-family: "Playfair Display", serif;
+  display: block;
+  color: #FAF0F8;
+  padding: 16px;
+  padding-right: 30px;
+  text-decoration: none;
+  text-align: right;
+  font-size: 125%;
+}
 
 .topbar {
   margin: 0;
   padding: 0;
-  width: 100%;          
+  width: 100%;          /* <--- CHANGE US TOGETHER */
   background-color: #4F404F;
+  position: fixed;
   height: 115px;
-    font-size: 250%;
-      transition: top 0.3s;
+  overflow: auto;
 }
-.topbar h1 {font-family: "Playfair Display", serif;
-    color: #FAF0F8;
-      font-style: italic;
-     text-align: center;
-    text-shadow: 40px;}
 
 #colophon a {
   font-family: "Playfair Display", serif;
@@ -209,9 +226,8 @@ div.content {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: fixed;
+  position: relative;
   display: inline-block;
-padding: 20px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -227,9 +243,8 @@ z-index: 1;
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    background-color: #4F404F;
     color: #4F404F
-  padding: 20px;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;}
 
